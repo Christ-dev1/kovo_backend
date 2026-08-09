@@ -24,6 +24,9 @@ php artisan storage:link || true
 echo " Exécution des migrations sur Neon"
 php artisan migrate --force
 
+echo "Génération de la documentation Swagger"
+php artisan l5-swagger:generate
+
 echo "Démarrage de php-fpm"
 php-fpm -D
 
